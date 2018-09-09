@@ -1,0 +1,37 @@
+{
+  "name": "dm20web",
+  "version": "1.0.0",
+  "description": "Alle Memes von dem SaveTheInternet Programmierer Discord",
+  "main": "tailwind-config.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "npm run build && node ./dist/app.js",
+    "lint": "tslint -p './' -e 'src/js/*'",
+    "assets-dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "assets-watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "assets-hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "assets-production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.3.6",
+    "cross-env": "^5.2.0",
+    "cssnano": "^3.10.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "laravel-mix": "^2.1.11",
+    "tailwindcss": "^0.6.1",
+    "ts-loader": "^3.5",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2",
+    "webpack": "3.12.0",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "jquery.cookie": "^1.4.1",
+    "socket.io-client": "^2.1.1",
+    "toastr": "^2.1.4"
+  }
+}
